@@ -408,7 +408,7 @@ double ntpDiffSeconds(union ntpTime * start, union ntpTime * stop) {
 
 #pragma mark                        I n b o u n d • D a t a   F i l t e r
 
-GCDAsyncUdpSocketReceiveFilterBlock filter = ^BOOL (NSData *data, NSData *address, id *context) {
+GCDAsyncUdpSocketReceiveFilterBlock filterBlock = ^BOOL (NSData *data, NSData *address, id *context) {
 
     return TRUE;
 
